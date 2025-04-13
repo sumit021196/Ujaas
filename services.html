@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Ujaas Energy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // JavaScript to toggle the mobile menu
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="font-sans">
 
+  <!-- Navbar -->
+  <nav class="bg-green-600 p-4 text-white flex justify-between items-center">
+    <div class="font-bold text-xl">Ujaas Energy</div>
+    <!-- Hamburger Icon -->
+    <button class="block md:hidden" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <!-- Navigation Links Desktop -->
+    <div class="hidden md:flex space-x-4">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-green-600 text-white p-4">
+    <a href="index.html" class="block mb-2">Home</a>
+    <a href="about.html" class="block mb-2">About</a>
+    <a href="services.html" class="block mb-2">Services</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+
+  <!-- Services Section -->
+  <section class="p-10">
+    <h1 class="text-4xl font-bold mb-6 text-center">Our Services</h1>
+    <ul class="max-w-2xl mx-auto space-y-4 text-gray-700">
+      <li>✔ Solar Panel Installation</li>
+      <li>✔ Renewable Energy Consultancy</li>
+      <li>✔ Maintenance and Support</li>
+      <li>✔ Customized Solar Solutions</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white text-center p-4 mt-10">
+    © 2025 Ujaas Energy | All Rights Reserved
+  </footer>
+
+</body>
+</html>
